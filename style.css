@@ -1,0 +1,163 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    margin: 3px;
+    color: rgb(51, 48, 48);
+}
+.img-p {
+    width: 100%;
+}
+/*container*/
+.container ul {
+    display: flex;
+    justify-content:flex-end;
+    list-style-type: none;
+}
+.container ul li {
+    padding: 40px;
+    
+}
+.container ul li a {
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 25px;
+}
+.container ul li:hover {
+    cursor: pointer;
+    box-shadow:1px 1px 1px 1px rgb(131, 130, 130) ;
+}
+.container ul li a:hover {
+    color: indianred;
+    
+}
+.container {
+    box-sizing: border-box;
+    background-image: url("./images/pic6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom:5%;
+    position: relative;
+    background-attachment: fixed;
+}
+.container h1{
+    font-size: 50px;
+    color: whitesmoke;
+    text-align: center;
+    padding:15%;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    padding:2%;
+    color: rgb(192, 82, 82);
+}
+p {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+/*main section*/
+.caption {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 2px;
+}
+    
+.box {
+    background-image: url("./images/pic5.jpg");
+    background-position: center;
+    background-size: cover;
+    padding:20%;
+ 
+}
+.list {
+    padding:20%;
+    background-color: ivory;
+}
+.list ul{
+    list-style-type: none;
+}
+.list ul li{
+    color: rgb(122, 112, 214);
+}
+.list ul{
+    font-size: 2rem;
+    text-align: center;
+}
+section p {
+    font-size: 27px;
+    text-align: center;
+}
+/*article*/
+.content {
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    text-align: center;
+    border-radius: 2px;;
+    box-shadow: px 1px 1px 1px grey;
+    font-size: 20px;
+}
+.one {
+    background-color:grey;
+    padding:2%;
+    justify-content: center;
+    color: ivory;
+    
+}
+.two {
+    padding:2%;
+    justify-content: center;
+    color: rgb(50, 177, 50);
+}
+/*contact details*/
+aside img {
+    width:3%;
+    margin-right: 5px;
+   
+}
+aside {
+text-align: center;
+
+}
+aside div {
+    padding : 1%;
+}
+/*footer*/
+footer {
+    background-color: rgb(78, 83, 83);
+    color: ivory;
+    padding-top: 1%;
+}
+/*media queries*/
+@media (max-width: 700px) {
+    .container ul li {
+        padding: 20px;
+        
+    }
+    .container ul {
+        justify-content: center;
+    }
+    .container ul li a {
+        font-size: 20px;
+    }
+    .container h1{
+        font-size: 35px;
+    }
+    .caption {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .list {
+        padding:10%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .list ul{
+        font-size: 1.5rem;
+    }
+}
